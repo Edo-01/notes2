@@ -316,8 +316,8 @@ function app() {
       ...dati,
       {
         id: counterNote,
-        titoloNota: textareaTitolo.value,
-        contenutoNota: textareaPar.value,
+        titoloNota: textareaTitolo.value || 'Nuova nota',
+        contenutoNota: textareaPar.value || 'Nessun contenuto',
         data: formatDataNoteAnteprima(),
         dataInterno: formatDataNote(),
       },
@@ -346,8 +346,8 @@ function app() {
       if (obj.id == id) {
         return {
           ...obj,
-          titoloNota: textareaTitolo.value,
-          contenutoNota: textareaPar.value,
+          titoloNota: textareaTitolo.value || 'Nuova nota',
+          contenutoNota: textareaPar.value || 'Nessun contenuto',
           data: formatDataNoteAnteprima(),
           dataInterno: formatDataNote(),
         };
@@ -371,14 +371,26 @@ function app() {
     divNota.classList.add('nota');
     containerNote.prepend(divNota);
     const titoloH3 = document.createElement('h3');
-    titoloH3.textContent = titolo;
+    if (titolo.length > 21) {
+      let breve = titolo.slice(0, 21) + '...';
+      titoloH3.textContent = breve;
+    } else {
+      titoloH3.textContent = titolo;
+    }
+
     titoloH3.classList.add('titoloNota');
     const spanData = document.createElement('span');
     spanData.classList.add('data');
     spanData.textContent = data;
     const spanContent = document.createElement('span');
     spanContent.classList.add('previewContenuto');
-    spanContent.textContent = testo;
+    if (testo.length > 25) {
+      let breve = testo.slice(0, 25) + '...';
+      spanContent.textContent = breve;
+    } else {
+      spanContent.textContent = testo;
+    }
+
     divNota.append(titoloH3);
     divNota.append(spanData);
     divNota.append(spanContent);
