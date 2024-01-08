@@ -434,12 +434,14 @@ function app() {
     });
     titoloNota = '';
     contenutoNota = '';
+
     totNote.textContent = dati.length;
     if (dati.length === 0) {
       containerNote.style.display = 'none';
     } else {
       containerNote.style.display = '';
     }
+
     btnAnnulla.style.display = 'none';
     elNumFilter.style.display = 'none';
     filtro = [];
@@ -466,6 +468,7 @@ function app() {
     });
     titoloNota = '';
     contenutoNota = '';
+
     totNote.textContent = dati.length;
     console.log(dati);
     if (dati.length === 0) {
@@ -473,6 +476,11 @@ function app() {
     } else {
       containerNote.style.display = '';
     }
+    btnAnnulla.style.display = 'none';
+    elNumFilter.style.display = 'none';
+    filtro = [];
+    numFilter.textContent = filtro.length;
+    inputSearch.value = '';
   });
 }
 app();

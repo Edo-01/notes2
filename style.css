@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #181818;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,7 +46,7 @@ header{
   padding-bottom: 15px;
   position: sticky;
   top:0;
-  background-color: #242424;
+  background-color: #181818;
 }
 header h1 {
   margin-bottom: 8px;
@@ -80,7 +80,10 @@ footer {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  background-color: #242424;
+ 
+  background: rgba(24, 24, 24, 0.75);
+
+backdrop-filter: blur(10px);
   height: 50px;
   padding: 5px 10px;
   display: flex;
@@ -103,7 +106,8 @@ footer span[class="totNote"] {
   align-items: center;
   position: sticky;
   top:0;
-  background-color: #242424;
+  
+  background-color: #181818;
 }
 .intestazione span {
   font-size: 15px;
@@ -123,7 +127,9 @@ footer span[class="totNote"] {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  background-color: #242424;
+  
+  background: rgba(24, 24, 24, 0.75);
+  backdrop-filter: blur(10px);
   height: 50px;
   padding: 5px 10px;
   display: flex;
@@ -145,7 +151,8 @@ margin-bottom: 10px;
 }
 
 .corpo #inputTitolo{
-  background-color: #242424;
+ 
+  background-color: #181818;
   border: none;
   margin-bottom: 40px;
   width: 100%;
@@ -168,7 +175,8 @@ margin-bottom: 10px;
 }
 
 .corpo #inputPar{
-  background-color: #242424;
+ 
+  background-color: #181818;
   border: none;
   width: 100%;
   resize: none;
@@ -205,4 +213,15 @@ margin-bottom: 10px;
   font-size: 13px;
   position: relative;
   top: 5px
+}
+#inputSearch:focus {
+  border: none;
+  outline: none;
+}
+#inputSearch::selection {
+ 
+  background-color:#b68c0046
+}
+#inputSearch{
+ color: #fff
 }
