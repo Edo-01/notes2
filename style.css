@@ -1,0 +1,208 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.app {
+  padding: 10px;
+}
+#inputSearch{
+  background-color: rgb(42, 42, 42);
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: 0px solid #000;
+  padding: 2px 20px;
+  font-size: 16px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.divSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.divSearch span {
+  color: #b68b00;
+  font-size: 14px;
+  margin-left: 10px;
+}
+header{
+  width: 100%;
+  padding-bottom: 15px;
+  position: sticky;
+  top:0;
+  background-color: #242424;
+}
+header h1 {
+  margin-bottom: 8px;
+}
+.containerNote {
+  background-color: rgb(42, 42, 42);
+  padding: 0px 20px 3px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.nota {
+  border: 1px solid pink;
+  border: 1px solid rgb(63, 63, 63);
+  border-width: 0px 0px 1px 0px;
+  padding: 6px 0px;
+}
+.nota:last-of-type{
+  border-width: 0px 0px 0px 0px;
+}
+.data {
+color: #8a8a8a;
+margin-right: 8px;
+font-size: 14px;
+}
+.previewContenuto {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #242424;
+  height: 50px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer span[id="btnCreaNota"] {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b68b00;
+}
+footer span[class="totNote"] {
+  font-size: 13px;
+}
+
+.intestazione {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top:0;
+  background-color: #242424;
+}
+.intestazione span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #b68b00;
+}
+.intestazione span:first-of-type:before {
+  content: '< ';
+}
+.corpo{
+ 
+ 
+  padding: 10px 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #242424;
+  height: 50px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b68b00;
+}
+
+.corpo .dataCreaNota{
+  color: #8a8a8a;
+font-size: 14px;
+text-align: center;
+
+margin-bottom: 10px;
+}
+
+.corpo #inputTitolo{
+  background-color: #242424;
+  border: none;
+  margin-bottom: 40px;
+  width: 100%;
+  resize: none;
+  overflow-y: hidden;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.corpo #inputTitolo:focus{
+  border: none;
+  outline: none;
+}
+
+.fontTextareaTitolo{
+  font-size: 23px;
+  font-weight: 700;
+}
+.fontTextareaTesto{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.corpo #inputPar{
+  background-color: #242424;
+  border: none;
+  width: 100%;
+  resize: none;
+  overflow-y: hidden;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.corpo #inputPar:focus{
+  border: none;
+  outline: none;
+}
+
+.footer2 {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #242424;
+  height: 50px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer2 span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b68b00;
+}
+.totNote {
+  color: rgb(194, 194, 194);
+}
+#elNumFilter {
+  color: rgb(194, 194, 194);
+  font-size: 13px;
+  position: relative;
+  top: 5px
+}

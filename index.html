@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+  </head>
+  <body>
+    <div id="app" class="app">
+     <div id="paginaHome" >
+      <header>
+        <h1>Note</h1>
+        <div class="divSearch">
+          <input type="text" name="" id="inputSearch" placeholder="Cerca">
+          <span id="btnAnnulla">Annulla</span>
+        </div>
+        <span id="elNumFilter">Risultati: <span id="numFilter">0</span></span>
+       </header>
+       <section class="containerNote">
+       <!-- dinamico -->
+       </section>
+       <footer>
+        <span style="visibility: hidden;">----</span>
+        <span class="totNote"><span id="totNote">0</span> note</span>
+        <span id="btnCreaNota">CREA</span>
+       </footer>
+     </div>
+     <div id="paginaNota" >
+        <div class="intestazione">
+          <span id="btnBackHome">Note</span>
+          <span id="btnCanc">Canc</span>
+        </div>
+        <div class="corpo">
+         <p class="dataCreaNota"></p>
+         <textarea id="inputTitolo"  class="fontTextareaTitolo" rows="1" ></textarea>
+         <textarea id="inputPar"  class="fontTextareaTesto" rows="1" ></textarea>
+        </div>
+        <div class="footer">
+          <span id="salvaNota">SALVA</span>
+        </div>
+        <div style="display: none;" class="footer2">
+          <span id="modNota">AGGIORNA</span>
+        </div>
+     </div>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
