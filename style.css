@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   accent-color: #b68b00;
 }
 
 * {
@@ -29,6 +30,7 @@
   border: 0px solid #000;
   padding: 2px 20px;
   font-size: 16px;
+  accent-color: #b68b00;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 .divSearch {
